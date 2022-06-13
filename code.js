@@ -15,6 +15,7 @@ function foo() {
 }
 
 // sayHello expression
-const sayHello = function () {
-	return ''
+const sayHello = function() {
+	return 'Hello, Jane!';
 }
+sayHello();
