@@ -14,14 +14,20 @@ function foo() {
 	return 2;
 }
 
-// sayHello expression
+// EXERCISE 1-5
+// const sayHello = function(input) {
+// 	if(input === 'Alex') {
+// 		return 'Hello, Alex!';
+// 	} else if(input === 'Pat') {
+// 		return 'Hello, Pat!';
+// 	} else {
+// 		return 'Hello, Jane!';
+// 	}
+// }
+// sayHello('Alex');
+
+// EXERCISE 6
 const sayHello = function(input) {
-	if(input === 'Alex') {
-		return 'Hello, Alex!';
-	} else if(input === 'Pat') {
-		return 'Hello, Pat!';
-	} else {
-		return 'Hello, Jane!';
-	}
+	return "Hello, " + input + "!";
 }
-sayHello('Alex');
+sayHello();
