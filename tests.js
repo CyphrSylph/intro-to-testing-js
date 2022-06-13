@@ -36,9 +36,13 @@ describe('sayHello', function() {
        expect(sayHello('Jane')).toBe('Hello, Jane!')
     });
 // EXERCISE 4
-   it('should return "Hello, Alex!"', function (){
+    it('should return "Hello, Alex!"', function (){
        expect(sayHello('Alex')).toBe('Hello, Alex!')
    });
+// EXERCISE 5
+    it('should return "Hello, Pat!"', function () {
+        expect(sayHello("Pat")).toBe("Hello, Pat!")
+    });
 });
 
 
