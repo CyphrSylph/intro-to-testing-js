@@ -32,16 +32,23 @@ describe('sayHello', function() {
         expect(typeof sayHello()).toBe("string");
     });
 // EXERCISE 3
-    it('should return "Hello, Jane!"', function (){
+    it('should return "Hello, Jane!" when passed the input "Jane"', function () {
        expect(sayHello('Jane')).toBe('Hello, Jane!')
     });
 // EXERCISE 4
-    it('should return "Hello, Alex!"', function (){
+    it('should return "Hello, Alex!" when passed the input "Alex"', function () {
        expect(sayHello('Alex')).toBe('Hello, Alex!')
    });
 // EXERCISE 5
-    it('should return "Hello, Pat!"', function () {
-        expect(sayHello("Pat")).toBe("Hello, Pat!")
+    it('should return "Hello, Pat!" when passed the input "Pat"', function () {
+        expect(sayHello('Pat')).toBe("Hello, Pat!")
+    });
+// EXERCISE 8
+    it('should return "Hello, World!" when passed the input "World"', function () {
+        expect(sayHello('World')).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if the input is true"', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
     });
 });
 

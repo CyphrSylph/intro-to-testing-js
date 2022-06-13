@@ -26,8 +26,12 @@ function foo() {
 // }
 // sayHello('Alex');
 
-// EXERCISE 6
+// EXERCISE 6-8
 const sayHello = function(input) {
-	return "Hello, " + input + "!";
+	if(input === true) {
+		return 'Hello, World!';
+	} else {
+		return "Hello, " + input + "!";
+	}
 }
 sayHello();
