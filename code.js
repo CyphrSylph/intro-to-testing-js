@@ -9,11 +9,12 @@ const helloWorld = function() {
 }
 helloWorld();
 
-// sayHello expression
-const sayHello = function () {
-}
-
 // foo function
 function foo() {
 	return 2;
+}
+
+// sayHello expression
+const sayHello = function () {
+	return ''
 }
