@@ -28,7 +28,7 @@ function foo() {
 
 // EXERCISE 6-8
 const sayHello = function(input) {
-	if(input === true) {
+	if(typeof input !== 'string' || input === '') {
 		return 'Hello, World!';
 	} else {
 		return "Hello, " + input + "!";

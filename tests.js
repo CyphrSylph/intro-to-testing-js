@@ -47,8 +47,26 @@ describe('sayHello', function() {
     it('should return "Hello, World!" when passed the input "World"', function () {
         expect(sayHello('World')).toBe("Hello, World!")
     });
-    it('should return "Hello, World!" if the input is true"', function () {
+    it('should return "Hello, World!" if the boolean is true', function () {
         expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if the boolean is false', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if the input is null', function () {
+        expect(sayHello(null)).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if the input is an empty string " "', function () {
+        expect(sayHello('')).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if the input is a number', function () {
+        expect(sayHello(Number)).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if the input is a number in a string', function () {
+        expect(sayHello(Number)).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if the input is an array', function () {
+        expect(sayHello([])).toBe("Hello, World!")
     });
 });
 
