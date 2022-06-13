@@ -24,17 +24,21 @@ describe('foo', function() {
 
 // EXERCISE 1
 describe('sayHello', function() {
-    it('it should be a defined function', function () {
+    it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function')
     });
 // EXERCISE 2
-    it('it should return a string when called', function () {
+    it('should return a string when called', function () {
         expect(typeof sayHello()).toBe("string");
     });
 // EXERCISE 3
-    it('it should return "Hello, Jane!"', function (){
+    it('should return "Hello, Jane!"', function (){
        expect(sayHello('Jane')).toBe('Hello, Jane!')
     });
+// EXERCISE 4
+   it('should return "Hello, Alex!"', function (){
+       expect(sayHello('Alex')).toBe('Hello, Alex!')
+   });
 });
 
 
