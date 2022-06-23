@@ -26,7 +26,7 @@ function foo() {
 // }
 // sayHello('Alex');
 
-// // EXERCISE 6-8
+// EXERCISE 6-8
 const sayHello = function(input) {
 	if(typeof input !== 'string' || input === '') {
 		return 'Hello, World!';
@@ -36,8 +36,15 @@ const sayHello = function(input) {
 }
 sayHello();
 
-// // EXERCISE 9-10
+// EXERCISE 9 GIT COMMIT
+
+// EXERCISE 10
 function isFive (input) {
 	return input == 5;
 }
 
+// EXERCISE 11
+// parseFloat takes in a string and returns a number
+function isEven (number) {
+	return parseFloat(number) % 2 === 0;
+}
