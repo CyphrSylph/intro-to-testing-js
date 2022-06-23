@@ -153,5 +153,33 @@ describe('isVowel', function () {
         expect(isVowel()).toBe(false)
     });
 })
-
+// EXERCISE 13
+// Jasmine does not accept NAN as an input for .toBe
+// It should be written as .tobNaN()
+describe('add', function () {
+    it('should be a defined function', function () {
+        expect(typeof(add)).toBe("function")
+    });
+    it('returns 5 when passed the inputs 2 and 3', function () {
+        expect(add(2,3)).toBe(5)
+    });
+    it('returns -12 when passed the inputs -3 and -9', function () {
+        expect(add(-3,-9)).toBe(-12)
+    });
+    it('returns 11 when passed the inputs "5" and 6', function () {
+        expect(add("5",6)).toBe(11)
+    });
+    it('returns 6 when passed the inputs "-4" and "10"', function () {
+       expect(add("-4","10")).toBe(6)
+    });
+    it('returns NaN when passed the inputs "banana" and "split"', function () {
+        expect(add("banana","split")).toBeNaN()
+    });
+    it('returns NaN when passed the inputs 2 and "apples"', function () {
+        expect(add(2,"apples")).toBeNaN()
+    });
+    it('returns NaN when passed a blank input', function () {
+        expect(add()).toBeNaN()
+    });
+})
 

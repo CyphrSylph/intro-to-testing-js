@@ -54,3 +54,9 @@ function isEven (number) {
 function isVowel(input) {
 	return "aeiouAEIOU".indexOf(input) !== -1;
 }
+
+// EXERCISE 13
+function add(x,y) {
+	return Number(x) + Number(y);
+}
+
