@@ -1,4 +1,4 @@
-// helloWorld function 
+// helloWorld function
 // function helloWorld() {
 //     return "Hello, World!";
 // }
@@ -26,7 +26,7 @@ function foo() {
 // }
 // sayHello('Alex');
 
-// EXERCISE 6-8
+// // EXERCISE 6-8
 const sayHello = function(input) {
 	if(typeof input !== 'string' || input === '') {
 		return 'Hello, World!';
@@ -35,3 +35,9 @@ const sayHello = function(input) {
 	}
 }
 sayHello();
+
+// // EXERCISE 9-10
+function isFive (input) {
+	return input == 5;
+}
+
