@@ -48,3 +48,9 @@ function isFive (input) {
 function isEven (number) {
 	return parseFloat(number) % 2 === 0;
 }
+
+// EXERCISE 12
+// indexOf checks the string for the input and returns -1 if it is not present
+function isVowel(input) {
+	return "aeiouAEIOU".indexOf(input) !== -1;
+}
